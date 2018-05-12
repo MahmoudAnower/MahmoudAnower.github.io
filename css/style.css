@@ -1,0 +1,119 @@
+/* strat general*/
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    border-radius: 10px;
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #CB351C;
+  border-radius: 15px
+}
+
+/*end general*/
+/* start header*/
+.header{background-image:url(../images/header.jpg);min-height: 650px;width: 100%}
+.header .overlay{top: 0;left: 0;min-height: 650px;width: 100%;background: rgba(0,0,0,.3);z-index: 2;height: 100%}
+.header .overlay .container-fluid{z-index: 4}
+.header .overlay h1{color:#fff;margin-top: 100px ;font-size: 6vw;font-family: raleway;margin-bottom: 30px}
+.header .overlay h1 strong{font-family:Impact;color:#CB351C;font-weight: normal;font-size: 7vw}
+.header .overlay p{color: #fff;font-family:tahoma;font-size: 40px;line-height: 1.5em;padding: 0 100px}
+.header .overlay button{color: #fff;width: 200px;height: 50px;border: 2px solid #CB351C;background: transparent;margin: 20px 40%;text-align: center;font-family: raleway;font-size: 20px;font-weight: bold;transition: all .5s ease}
+.header .overlay button:hover{background: #CB351C}
+/*end header*/
+/*start about*/
+.about{padding: 30px 0}
+.about h1{font-family:tahoma;color: #333;font-weight: bold;border-bottom: 3px solid #222; width: 120px ;margin: 0 auto ;padding-bottom: 15px;margin-bottom: 30px;margin-top: 60px}
+.about p{padding: 30px 10%;font-size: 20px;}
+/* end about*/
+/* start projects*/
+.projects{padding: 30px 0;background: #eee}
+.projects h1{font-family:tahoma;color: #333;font-weight: bold;border-bottom: 3px solid #222; width: 150px ;margin: 0 auto ;padding-bottom: 15px;margin-top: 60px}
+.projects .row{margin-top: 30px;}
+.project{height: 300px;position: relative;overflow: hidden;margin-bottom: 20px}
+.project:hover .overlay{display: block}
+.project:hover img{transform: scale(1.1,1.1)}
+
+.project .overlay{width: 100%;height: 100%;top: 0;left: 0;z-index: 3;background: rgba(203, 53, 28, 0.8);position: absolute;display: none}
+.project img{width: 100%;height: 100%;transition: all 1s ease-in-out}
+.project .operation{width: 150px;height: auto;margin: 30% auto;text-align: center}
+.project .glyphicon{position: static;top: auto;display: block;float: left;cursor: pointer}
+.project .glyphicon:first-child{margin-right: 20px}
+.project i{width:50px;height: 50px;border: 2px solid #fff;text-align: center;line-height: 40px;font-size: 20px;color: #fff;border-radius: 5px;transition: all .5s ease-in-out}
+.project i:hover{border: 2px solid #fff;background: #fff;color: #CB351C}
+.project h1{z-index: 4}
+/*-----------------modal--*/
+.modal-body{padding: 0;overflow: hidden}
+.modal-header{padding-left: 20px;padding-top: 0;height: 38px;background: (3,3,3,.7);padding-right: 0;overflow: hidden;}
+.modal-header h4{line-height: 40px;font-family: tahoma;font-weight: bold;border-bottom: 0;font-size: 18px;text-transform: uppercase}
+.close{opacity: .5}
+.close:hover{opacity: 1}
+button.close{background: #CB351C;padding: 11px 12px;}
+
+/* end projects*/
+/* start contact*/
+.contact{width: 100%;min-height: 400px;background-image: url(../images/contact.JPG) ;position: relative;}
+.contact .overlay{top: 0;left: 0;height: 100%;width: 100%;position: absolute;background-color: rgba(203, 53, 28, 0.8);background-size: cover}
+.media{margin-left: 30%}
+.contact h1{margin: 60px 0;color: #fff;font-family:tahoma;font-size: 4vw;font-weight: bolder;margin-bottom: 30px }
+.contact p{margin-top: 20px;font-family: raleway}
+.contact i{text-align: center;margin: 30px auto;}
+.contact .glyphicon{font-size: 25px;color: #fff;text-align: center;padding: 20px;text-align: center;float: none;margin-bottom: 40px}
+/* end contact*/
+
+/* -----------------------------------------------------------responsive media query-----------------------------------------------*/
+@media (min-width: 320px) and (max-width:520px) {
+    /*navbar*/
+.navbar-inverse .navbar-nav{margin: 5px 20%}
+    /*header*/
+    .header .overlay h1 {font-size: 9vw}
+    .header .overlay h1 strong{font-size: 9vw}
+.header .overlay p{font-size: 20px;line-height: 2em;padding: 20px 0px}
+.header .overlay button{margin: 20px 25%}
+    /*about*/
+.about p{padding: 30px 10%;font-size: 20px;}
+.about .nav-tabs{margin-left: 5%;margin-bottom: 20px }
+.about .nav-tabs >li{font-weight: bold;font-size: 18px;margin-bottom: 20px}
+    /*contact*/
+    .contact h1{font-size: 4vw;font-weight: bolder;margin-bottom: 30px }
+    .contact i{text-align: center;margin: 30px auto;}
+.contact .glyphicon{font-size: 4vw;padding: 20px;text-align: center;}
+    .media{margin-left: 10%}
+
+}
+/*--------------------------*/
+@media (min-width: 520px) and (max-width:710px) {
+    /*navbar-------------------------------*/
+.navbar-inverse .navbar-nav{margin: 5px 20%}
+    /*header-------------------------------*/
+.header .overlay p{color: #fff;font-family:tahoma;font-size: 30px;line-height: 1.5em;padding: 20px 0px}
+.media{margin-left: 15%}
+    /*contact*/
+    .contact .glyphicon{font-size: 3vw;padding: 20px;text-align: center;}
+    .project{height: 400px}
+
+}
+/*------------------------------*/
+@media (min-width: 710px) and (max-width:1200px) {
+    /*navbar*/
+.navbar-inverse .navbar-nav{margin: 5px 20%}
+    /*header*/
+.header .overlay p{color: #fff;font-family:tahoma;font-size: 30px;line-height: 1.5em;padding: 20px 0px}
+.media{margin-left: 15%}
+    /*about*/
+.about p{padding: 30px 5%;font-size: 20px;}
+.about .nav-tabs{margin-left: 30%;margin-bottom: 20px }
+.about .nav-tabs >li{font-weight: bold;font-size: 18px;margin-bottom: 20px}
+    /*contact*/
+    .contact .glyphicon{font-size: 3vw;padding: 20px;text-align: center;}
+
+}
+/*------------------------------*/
